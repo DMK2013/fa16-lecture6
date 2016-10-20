@@ -1,0 +1,7 @@
+<h1>Trainer <%= @trainer.name %></h1>
+<% @pokemons.each do |p| %>
+  <div>
+    <%= p.name %>
+    <img src="<%= p.image_url %>">
+  </div>
+<% end %>

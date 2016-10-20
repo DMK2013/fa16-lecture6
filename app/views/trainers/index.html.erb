@@ -1,0 +1,8 @@
+<% @trainers.each do |t| %>
+  <div>
+    <%= t.name %>
+    <% t.pokemons.each do |p| %>
+      <li><%= p.name %></li>
+    <% end %>
+  </div>
+<% end %>
